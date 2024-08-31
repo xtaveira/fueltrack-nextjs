@@ -5,7 +5,11 @@ type TitleTypes = {
 };
 
 const Title = ({ text }: TitleTypes) => {
-  return <div>{text}</div>;
+  return (
+    <div className="flex items-center text-center font-bold text-xl">
+      {text}
+    </div>
+  );
 };
 
 export default Title;
