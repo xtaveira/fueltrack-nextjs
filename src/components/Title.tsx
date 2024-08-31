@@ -2,11 +2,12 @@ import React from "react";
 
 type TitleTypes = {
   text: string;
+  size?: string;
 };
 
-const Title = ({ text }: TitleTypes) => {
+const Title = ({ text, size = "text-xl" }: TitleTypes) => {
   return (
-    <div className="flex items-center text-center font-bold text-xl">
+    <div className={`flex items-center text-center font-bold ${size}`}>
       {text}
     </div>
   );

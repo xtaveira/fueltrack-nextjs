@@ -1,6 +1,6 @@
+import Button from "@/components/Button";
 import Title from "@/components/Title";
 import VehiclesList from "@/components/VehiclesList";
-import { Button } from "@mui/material";
 import Image from "next/image";
 
 export default function Home() {
@@ -9,9 +9,7 @@ export default function Home() {
       <section className="w-[80%] md:w-[50%] flex flex-col">
         <div className="flex justify-between">
           <Title text="Vehicles" />
-          <Button variant="contained" color="primary">
-            New Vehicle
-          </Button>
+          <Button text="New Vehicle"></Button>
         </div>
         <VehiclesList />
       </section>
